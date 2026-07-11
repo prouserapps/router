@@ -1,0 +1,22 @@
+{
+  "name": "@prouserapps/router",
+  "version": "1.0.0",
+  "description": "Framework-agnostic controller contract (IController/IRequest/IResponse) with an Express adapter",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}
